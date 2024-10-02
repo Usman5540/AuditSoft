@@ -9,6 +9,7 @@ dotenv.config();
 
 // Create Express app
 const app = express();
+app.get("/", (req, res) => res.json({ message: "working auditSoft" }));
 
 // Middleware to parse JSON
 app.use(express.json());
